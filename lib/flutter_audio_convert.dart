@@ -34,6 +34,8 @@ Future<String> toM4A(String input, {String output, String extend='mp4'}) async {
   Int8P inputPtr = Int8P.fromString(input);
   Int8P outputPtr = Int8P.fromString(output);
   int convertRet = _audioConvertToM4A(inputPtr.address, outputPtr.address);
+  inputPtr.dispose();
+  outputPtr.dispose();
   print('In toM4A, convertRet ... $convertRet');
   _lastErrRet = convertRet;
   if (convertRet < 0) {
