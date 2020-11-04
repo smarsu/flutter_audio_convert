@@ -3,19 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12603DDB255252D4000EEF12 /* libaudio_convert.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12603DDA255252D4000EEF12 /* libaudio_convert.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
+		7EB4CF41BA1833DE79778C83 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E773236820E225051A902E /* Pods_Runner.framework */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1297544B25515E92008E2E05 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				12603DDB255252D4000EEF12 /* libaudio_convert.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,9 +41,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		120E507725517D01003B0CEE /* libavfilter.7.57.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavfilter.7.57.100.dylib; path = "../../../FFmpeg-iOS-build-script/thin/arm64/lib/lib/libavfilter.7.57.100.dylib"; sourceTree = "<group>"; };
+		120E507825517D01003B0CEE /* libavformat.58.29.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.58.29.100.dylib; path = "../../../FFmpeg-iOS-build-script/thin/arm64/lib/lib/libavformat.58.29.100.dylib"; sourceTree = "<group>"; };
+		120E507925517D01003B0CEE /* libswresample.3.5.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.3.5.100.dylib; path = "../../../FFmpeg-iOS-build-script/thin/arm64/lib/lib/libswresample.3.5.100.dylib"; sourceTree = "<group>"; };
+		120E507A25517D01003B0CEE /* libavcodec.58.54.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.58.54.100.dylib; path = "../../../FFmpeg-iOS-build-script/thin/arm64/lib/lib/libavcodec.58.54.100.dylib"; sourceTree = "<group>"; };
+		120E507B25517D01003B0CEE /* libavdevice.58.8.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.58.8.100.dylib; path = "../../../FFmpeg-iOS-build-script/thin/arm64/lib/lib/libavdevice.58.8.100.dylib"; sourceTree = "<group>"; };
+		120E507C25517D01003B0CEE /* libavutil.56.31.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.56.31.100.dylib; path = "../../../FFmpeg-iOS-build-script/thin/arm64/lib/lib/libavutil.56.31.100.dylib"; sourceTree = "<group>"; };
+		120E507D25517D01003B0CEE /* libswscale.5.5.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.5.5.100.dylib; path = "../../../FFmpeg-iOS-build-script/thin/arm64/lib/lib/libswscale.5.5.100.dylib"; sourceTree = "<group>"; };
+		12603DDA255252D4000EEF12 /* libaudio_convert.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libaudio_convert.dylib; path = ../../ios/Classes/libaudio_convert.dylib; sourceTree = "<group>"; };
+		1297544C25515EA1008E2E05 /* libaudio_convert.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libaudio_convert.dylib; sourceTree = "<group>"; };
+		1297548125517911008E2E05 /* libavcodec.58.54.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.58.54.100.dylib; path = "../../../FFmpeg-iOS-build-script/thin/arm64/lib/libavcodec.58.54.100.dylib"; sourceTree = "<group>"; };
+		129754832551796F008E2E05 /* libavcodec.58.54.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.58.54.100.dylib; path = "../../../FFmpeg-iOS-build-script/thin/arm64/lib/libavcodec.58.54.100.dylib"; sourceTree = "<group>"; };
+		1297548525517B44008E2E05 /* audio_convert.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = audio_convert.cc; path = ../../ios/Classes/audio_convert/audio_convert.cc; sourceTree = "<group>"; };
+		1297548725517B74008E2E05 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = "../../../FFmpeg-iOS-build-script/thin/arm64/include"; sourceTree = "<group>"; };
+		1297548925517B9A008E2E05 /* libavutil */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libavutil; path = "../../../FFmpeg-iOS-build-script/thin/arm64/include/libavutil"; sourceTree = "<group>"; };
+		1297548A25517B9A008E2E05 /* libavcodec */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libavcodec; path = "../../../FFmpeg-iOS-build-script/thin/arm64/include/libavcodec"; sourceTree = "<group>"; };
+		1297548B25517B9A008E2E05 /* libswscale */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libswscale; path = "../../../FFmpeg-iOS-build-script/thin/arm64/include/libswscale"; sourceTree = "<group>"; };
+		1297548C25517B9A008E2E05 /* libavdevice */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libavdevice; path = "../../../FFmpeg-iOS-build-script/thin/arm64/include/libavdevice"; sourceTree = "<group>"; };
+		1297548D25517B9A008E2E05 /* libswresample */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libswresample; path = "../../../FFmpeg-iOS-build-script/thin/arm64/include/libswresample"; sourceTree = "<group>"; };
+		1297548E25517B9A008E2E05 /* libavformat */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libavformat; path = "../../../FFmpeg-iOS-build-script/thin/arm64/include/libavformat"; sourceTree = "<group>"; };
+		1297548F25517B9A008E2E05 /* libavfilter */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libavfilter; path = "../../../FFmpeg-iOS-build-script/thin/arm64/include/libavfilter"; sourceTree = "<group>"; };
+		1297549725517C8B008E2E05 /* libswscale.5.5.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.5.5.100.dylib; path = "../../../FFmpeg-iOS-build-script/thin/arm64/lib/libswscale.5.5.100.dylib"; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		2EE3592354127010B7C4F7CC /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		47AB2B75EF311FE4B9277363 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		59E773236820E225051A902E /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62F6B378A7C60AA5C9A3822D /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
@@ -49,12 +86,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB4CF41BA1833DE79778C83 /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0075C97794545C7ACE44A2A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62F6B378A7C60AA5C9A3822D /* Pods-Runner.debug.xcconfig */,
+				47AB2B75EF311FE4B9277363 /* Pods-Runner.release.xcconfig */,
+				2EE3592354127010B7C4F7CC /* Pods-Runner.profile.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		52B16C522414F4E0F001E18B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1297549725517C8B008E2E05 /* libswscale.5.5.100.dylib */,
+				120E507A25517D01003B0CEE /* libavcodec.58.54.100.dylib */,
+				120E507B25517D01003B0CEE /* libavdevice.58.8.100.dylib */,
+				120E507725517D01003B0CEE /* libavfilter.7.57.100.dylib */,
+				120E507825517D01003B0CEE /* libavformat.58.29.100.dylib */,
+				120E507C25517D01003B0CEE /* libavutil.56.31.100.dylib */,
+				120E507925517D01003B0CEE /* libswresample.3.5.100.dylib */,
+				120E507D25517D01003B0CEE /* libswscale.5.5.100.dylib */,
+				59E773236820E225051A902E /* Pods_Runner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,9 +133,24 @@
 		97C146E51CF9000F007C117D = {
 			isa = PBXGroup;
 			children = (
+				12603DDA255252D4000EEF12 /* libaudio_convert.dylib */,
+				1297548A25517B9A008E2E05 /* libavcodec */,
+				1297548C25517B9A008E2E05 /* libavdevice */,
+				1297548F25517B9A008E2E05 /* libavfilter */,
+				1297548E25517B9A008E2E05 /* libavformat */,
+				1297548925517B9A008E2E05 /* libavutil */,
+				1297548D25517B9A008E2E05 /* libswresample */,
+				1297548B25517B9A008E2E05 /* libswscale */,
+				1297548725517B74008E2E05 /* include */,
+				1297548525517B44008E2E05 /* audio_convert.cc */,
+				1297548125517911008E2E05 /* libavcodec.58.54.100.dylib */,
+				129754832551796F008E2E05 /* libavcodec.58.54.100.dylib */,
+				1297544C25515EA1008E2E05 /* libaudio_convert.dylib */,
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
+				0075C97794545C7ACE44A2A0 /* Pods */,
+				52B16C522414F4E0F001E18B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,12 +184,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
+				8990CD8422F70D64C2CEFA6D /* [CP] Check Pods Manifest.lock */,
 				9740EEB61CF901F6004384FC /* Run Script */,
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
 				97C146EC1CF9000F007C117D /* Resources */,
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
+				A1F43356764428AC8843AE4F /* [CP] Embed Pods Frameworks */,
+				1297544B25515E92008E2E05 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -181,7 +263,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin\n";
+		};
+		8990CD8422F70D64C2CEFA6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		9740EEB61CF901F6004384FC /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -196,6 +300,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
+		};
+		A1F43356764428AC8843AE4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -288,13 +409,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 3S9ML2DVY9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/flutter_audio_convert/flutter_audio_convert.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/flutter_c_ptr/flutter_c_ptr.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/path_provider/path_provider.framework/Headers\"",
+					"/Users/smarsu/tencent/projects/FFmpeg-iOS-build-script/thin/arm64/include/**",
+				);
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
@@ -407,7 +539,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -420,13 +553,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 3S9ML2DVY9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/flutter_audio_convert/flutter_audio_convert.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/flutter_c_ptr/flutter_c_ptr.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/path_provider/path_provider.framework/Headers\"",
+					"/Users/smarsu/tencent/projects/FFmpeg-iOS-build-script/thin/arm64/include/**",
+				);
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
@@ -447,13 +591,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 3S9ML2DVY9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/flutter_audio_convert/flutter_audio_convert.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/flutter_c_ptr/flutter_c_ptr.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/path_provider/path_provider.framework/Headers\"",
+					"/Users/smarsu/tencent/projects/FFmpeg-iOS-build-script/thin/arm64/include/**",
+				);
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",

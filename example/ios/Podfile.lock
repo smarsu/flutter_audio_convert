@@ -1,0 +1,34 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_audio_convert (0.0.1):
+    - Flutter
+  - flutter_c_ptr (0.0.1):
+    - Flutter
+  - path_provider (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_audio_convert (from `.symlinks/plugins/flutter_audio_convert/ios`)
+  - flutter_c_ptr (from `.symlinks/plugins/flutter_c_ptr/ios`)
+  - path_provider (from `.symlinks/plugins/path_provider/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_audio_convert:
+    :path: ".symlinks/plugins/flutter_audio_convert/ios"
+  flutter_c_ptr:
+    :path: ".symlinks/plugins/flutter_c_ptr/ios"
+  path_provider:
+    :path: ".symlinks/plugins/path_provider/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_audio_convert: 327ba262d6ee2977ba9ef7e4854d4e9f3080df4b
+  flutter_c_ptr: 7b74ce7c07bccc67b5bc331c521ebbd0e443ed82
+  path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.0.beta.2
