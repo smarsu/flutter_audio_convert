@@ -16,6 +16,11 @@ final int Function(int, int) _audioConvertToM4A =
         .lookup<NativeFunction<Int32 Function(Int64, Int64)>>("to_m4a")
         .asFunction();
 
+final int Function(int, int, double) _audioConvertToVolume = 
+    _audioConvertLib
+        .lookup<NativeFunction<Int32 Function(Int64, Int64, Double)>>("to_volume")
+        .asFunction();
+
 int _lastErrRet = 0;
 
 int getLastErrRet() {
@@ -49,6 +54,28 @@ Future<String> toM4A(String input, {String output, String extend='mp4'}) async {
   else if (convertRet == 1) {
     // The input is M4A format.
     return input;
+  }
+  return output;
+}
+
+Future<String> toVolume(String input, {String output, double volume=-10, String extend='mp4'}) async {
+  if (output == null) {
+    output = await appDocPath('${DateTime.now().microsecondsSinceEpoch}.$extend');
+  }
+  Int8P inputPtr = Int8P.fromString(input);
+  Int8P outputPtr = Int8P.fromString(output);
+  int convertRet = _audioConvertToVolume(inputPtr.address, outputPtr.address, volume);
+  inputPtr.dispose();
+  outputPtr.dispose();
+  print('In toVolume, convertRet ... $convertRet');
+  _lastErrRet = convertRet;
+  if (convertRet < 0) {
+    // Failed
+    return input;
+  }
+  else if (convertRet == 0) {
+    // Success
+    return output;
   }
   return output;
 }

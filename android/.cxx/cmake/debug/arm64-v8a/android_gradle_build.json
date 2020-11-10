@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/smarsu/tencent/projects/flutter_audio_convert/android/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/cmake --build /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cc" ],
+	"libraries" : 
+	{
+		"audio_convert-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "audio_convert",
+			"buildCommand" : "/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/cmake --build /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a --target audio_convert",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android24 --gcc-toolchain=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Daudio_convert_EXPORTS  -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -llog -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/smarsu/tencent/projects/flutter_audio_convert/android/audio_convert.cc",
+					"workingDirectory" : "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so",
+			"toolchain" : "13442194127159475407"
+		}
+	},
+	"toolchains" : 
+	{
+		"13442194127159475407" : 
+		{
+			"cCompilerExecutable" : "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}
