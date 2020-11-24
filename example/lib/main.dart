@@ -35,9 +35,11 @@ class _MyAppState extends State<MyApp> {
     String path1 = await loadAsset('assets/cat.mp4', 'cat.mp4');
     await toM4A(path1);
     await toVolume(path1);
+    print('assets/cat.mp4 duration ... ${await toDuration(path1)}');
     String path2 = await loadAsset('assets/seeyou.mp4', 'seeyou.mp4');
     await toM4A(path2);
     await toVolume(path2);
+    print('assets/seeyou.mp4 duration ... ${await toDuration(path2)}');
   }
 
   @override

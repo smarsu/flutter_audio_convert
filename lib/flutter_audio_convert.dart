@@ -21,6 +21,11 @@ final int Function(int, int, double) _audioConvertToVolume =
         .lookup<NativeFunction<Int32 Function(Int64, Int64, Double)>>("to_volume")
         .asFunction();
 
+final int Function(int) _audioConvertToDuration = 
+    _audioConvertLib
+        .lookup<NativeFunction<Int64 Function(Int64)>>("to_duration")
+        .asFunction();
+
 int _lastErrRet = 0;
 
 int getLastErrRet() {
@@ -78,4 +83,19 @@ Future<String> toVolume(String input, {String output, double volume=-10, String 
     return output;
   }
   return output;
+}
+
+Future<int> toDuration(String input) async {
+  Int8P inputPtr = Int8P.fromString(input);
+  int duration = _audioConvertToDuration(inputPtr.address);
+  inputPtr.dispose();
+  print('In toDuration, duration ... $duration');
+  _lastErrRet = duration;
+  if (duration < 0) {
+    // Failed
+    return 0;
+  }
+  else {
+    return duration;
+  }
 }
