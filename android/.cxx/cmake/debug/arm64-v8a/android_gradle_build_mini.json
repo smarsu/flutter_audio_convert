@@ -1,16 +1,19 @@
 {
   "buildFiles": [
-    "/Users/smarsu/tencent/projects/flutter_audio_convert/android/CMakeLists.txt"
+    "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/build/cmake/android.toolchain.cmake",
+    "/Users/smarsu/tencent/projects/flutter_audio_convert/android/CMakeLists.txt",
+    "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/build/cmake/platforms.cmake"
   ],
   "cleanCommands": [
-    "/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/cmake --build /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a --target clean"
+    "/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja -C \"/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a\" clean"
   ],
+  "buildTargetsCommand": "/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "audio_convert-Debug-arm64-v8a": {
       "artifactName": "audio_convert",
-      "buildCommand": "/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/cmake --build /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a --target audio_convert",
+      "buildCommand": "/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja -C \"/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a\" audio_convert",
       "abi": "arm64-v8a",
-      "output": "/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so"
+      "output": "/Users/smarsu/tencent/projects/video_editor_flutter/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so"
     }
   }
 }

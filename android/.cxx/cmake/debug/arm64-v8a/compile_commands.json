@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a",
+  "command": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Daudio_convert_EXPORTS  -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -llog -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/audio_convert.dir/audio_convert.cc.o -c /Users/smarsu/tencent/projects/flutter_audio_convert/android/audio_convert.cc",
+  "file": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/audio_convert.cc"
+}
+]

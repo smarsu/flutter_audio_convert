@@ -19,6 +19,10 @@
     },
     {
       "level": "INFO",
+      "message": "Because no explicit NDK was requested, the default version \u002720.0.5594570\u0027 for this Android Gradle Plugin will be used"
+    },
+    {
+      "level": "INFO",
       "message": "Considering /Users/smarsu/tencent/projects/android-sdk-macosx/ndk-bundle in SDK ndk-bundle folder"
     },
     {
@@ -31,7 +35,7 @@
     },
     {
       "level": "INFO",
-      "message": "No user requested version, choosing /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570 which is version 20.0.5594570"
+      "message": "Found requested NDK version 20.0.5594570 at /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570"
     }
   ]
 }

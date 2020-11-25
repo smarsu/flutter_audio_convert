@@ -1,69 +1,197 @@
 {
-  "variant": {
-    "module": {
-      "rootBuildGradleFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/example/android",
-      "sdkFolder": "/Users/smarsu/tencent/projects/android-sdk-macosx",
-      "isNativeCompilerSettingsCacheEnabled": false,
-      "isBuildOnlyTargetAbiEnabled": true,
-      "splitsAbiFilterSet": [],
-      "intermediatesFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates",
-      "gradleModulePathName": ":flutter_audio_convert",
-      "moduleRootFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android",
-      "makeFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/CMakeLists.txt",
-      "buildSystem": "CMAKE",
-      "compilerSettingsCacheFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/example/android/.cxx",
-      "cxxFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx",
-      "ndkFolder": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570",
-      "ndkVersion": "20.0.5594570",
-      "ndkSupportedAbiList": [
-        "ARMEABI_V7A",
-        "ARM64_V8A",
-        "X86",
-        "X86_64"
+  "abi": "ARM64_V8A",
+  "abiPlatformVersion": 24,
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "cmake": {
+    "cmakeArtifactsBaseFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a",
+    "cmakeServerLogFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cxx/debug/arm64-v8a",
+    "effectiveConfiguration": {
+      "name": "traditional-android-studio-cmake-environment",
+      "description": "Composite reified CMakeSettings configuration",
+      "generator": "Ninja",
+      "inheritEnvironments": [
+        "ndk"
       ],
+      "buildRoot": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a",
+      "cmakeToolchain": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/build/cmake/android.toolchain.cmake",
+      "cmakeExecutable": "/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.10.2.4988404/bin/cmake",
+      "variables": [
+        {
+          "name": "CMAKE_CXX_FLAGS",
+          "value": "-llog"
+        },
+        {
+          "name": "CMAKE_BUILD_TYPE",
+          "value": "Debug"
+        },
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/build/cmake/android.toolchain.cmake"
+        },
+        {
+          "name": "ANDROID_ABI",
+          "value": "arm64-v8a"
+        },
+        {
+          "name": "ANDROID_NDK",
+          "value": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570"
+        },
+        {
+          "name": "ANDROID_PLATFORM",
+          "value": "android-24"
+        },
+        {
+          "name": "CMAKE_ANDROID_ARCH_ABI",
+          "value": "arm64-v8a"
+        },
+        {
+          "name": "CMAKE_ANDROID_NDK",
+          "value": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570"
+        },
+        {
+          "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
+          "value": "ON"
+        },
+        {
+          "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
+          "value": "/Users/smarsu/tencent/projects/video_editor_flutter/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a"
+        },
+        {
+          "name": "CMAKE_MAKE_PROGRAM",
+          "value": "/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja"
+        },
+        {
+          "name": "CMAKE_SYSTEM_NAME",
+          "value": "Android"
+        },
+        {
+          "name": "CMAKE_SYSTEM_VERSION",
+          "value": "24"
+        }
+      ]
+    }
+  },
+  "cxxBuildFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a",
+  "info": {
+    "abi": "ARM64_V8A",
+    "bitness": 64,
+    "deprecated": false,
+    "default": true
+  },
+  "originalCxxBuildFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a",
+  "variant": {
+    "buildSystemArgumentList": [],
+    "buildTargetSet": [],
+    "cFlagsList": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "cppFlagsList": [
+      "-llog"
+    ],
+    "isDebuggableEnabled": true,
+    "module": {
+      "buildSystem": "CMAKE",
+      "cmake": {
+        "cmakeExe": "/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.10.2.4988404/bin/cmake",
+        "minimumCmakeVersion": "3.10.2",
+        "ninjaExe": "/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja"
+      },
+      "cmakeToolchainFile": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/build/cmake/android.toolchain.cmake",
+      "cxxFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx",
+      "gradleModulePathName": ":flutter_audio_convert",
+      "intermediatesFolder": "/Users/smarsu/tencent/projects/video_editor_flutter/build/flutter_audio_convert/intermediates",
+      "makeFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/CMakeLists.txt",
+      "moduleBuildFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/build.gradle",
+      "moduleRootFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
         "X86",
         "X86_64"
       ],
-      "cmakeToolchainFile": "."
+      "ndkFolder": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570",
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "ndkMetaPlatforms": {
+        "min": 16,
+        "max": 29,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29
+        }
+      },
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkVersion": "20.0.5594570",
+      "project": {
+        "compilerSettingsCacheFolder": "/Users/smarsu/tencent/projects/video_editor_flutter/android/.cxx",
+        "cxxFolder": "/Users/smarsu/tencent/projects/video_editor_flutter/android/.cxx",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isNativeCompilerSettingsCacheEnabled": false,
+        "rootBuildGradleFolder": "/Users/smarsu/tencent/projects/video_editor_flutter/android",
+        "sdkFolder": "/Users/smarsu/tencent/projects/android-sdk-macosx"
+      },
+      "splitsAbiFilterSet": [],
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "ARM64_V8A": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "X86": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "X86_64": "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      }
     },
-    "buildSystemArgumentList": [],
-    "cFlagList": [],
-    "cppFlagsList": [
-      "-llog"
-    ],
+    "objFolder": "/Users/smarsu/tencent/projects/video_editor_flutter/build/flutter_audio_convert/intermediates/cmake/debug/obj",
     "variantName": "debug",
-    "soFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/lib",
-    "objFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj",
-    "jsonFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug",
-    "gradleBuildOutputFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cxx/debug",
-    "isDebuggableEnabled": true,
     "validAbiList": [
       "ARM64_V8A"
-    ],
-    "buildTargetSet": []
-  },
-  "abi": "ARM64_V8A",
-  "abiPlatformVersion": 24,
-  "cxxBuildFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a",
-  "jsonFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build.json",
-  "gradleBuildOutputFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cxx/debug/arm64-v8a",
-  "objFolder": "/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a",
-  "buildCommandFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/build_command.txt",
-  "buildOutputFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/build_output.txt",
-  "modelOutputFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/build_model.json",
-  "cmake": {
-    "cmakeListsWrapperFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cxx/debug/arm64-v8a/CMakeLists.txt",
-    "toolchainWrapperFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cxx/debug/arm64-v8a/android_gradle_build.toolchain.cmake",
-    "buildGenerationStateFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cxx/debug/arm64-v8a/build_generation_state.json",
-    "cacheKeyFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cxx/debug/arm64-v8a/compiler_cache_key.json",
-    "compilerCacheUseFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cxx/debug/arm64-v8a/compiler_cache_use.json",
-    "compilerCacheWriteFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cxx/debug/arm64-v8a/compiler_cache_write.json",
-    "toolchainSettingsFromCacheFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cxx/debug/arm64-v8a/compiler_settings_cache.cmake",
-    "cmakeWrappingBaseFolder": "."
-  },
-  "jsonGenerationLoggingRecordFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/json_generation_record.json",
-  "compileCommandsJsonFile": "/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/compile_commands.json"
+    ]
+  }
 }

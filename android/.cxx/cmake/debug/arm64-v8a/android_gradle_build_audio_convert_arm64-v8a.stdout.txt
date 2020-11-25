@@ -1,1 +1,4 @@
-[1/1] Linking CXX shared library /Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so
+ninja: Entering directory `/Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a'
+[1/2] Building CXX object CMakeFiles/audio_convert.dir/audio_convert.cc.o
+clang++: warning: -llog: 'linker' input unused [-Wunused-command-line-argument]
+[2/2] Linking CXX shared library /Users/smarsu/tencent/projects/video_editor_flutter/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so
