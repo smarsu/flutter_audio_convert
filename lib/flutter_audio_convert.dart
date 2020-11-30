@@ -26,6 +26,11 @@ final int Function(int) _audioConvertToDuration =
         .lookup<NativeFunction<Int64 Function(Int64)>>("to_duration")
         .asFunction();
 
+final int Function(int, int, int, int) _audioConvertToThumbnail = 
+    _audioConvertLib
+        .lookup<NativeFunction<Int32 Function(Int64, Int64, Int64, Int32)>>("to_thumbnail")
+        .asFunction();
+
 int _lastErrRet = 0;
 
 int getLastErrRet() {
@@ -98,4 +103,36 @@ Future<int> toDuration(String input) async {
   else {
     return duration;
   }
+}
+
+Future<List<String>> toThumbnail(String input, List<double> timesInMs, {List<String> outputs}) async {
+  List<Int8P> outputPtrs = [];
+  List<int> outputAddress = [];
+  if (outputs == null) {
+    outputs = [];
+    for (var time in timesInMs) {
+      String output = await appDocPath('${DateTime.now().microsecondsSinceEpoch}_$time.jpg');
+      outputs.add(output);
+
+      Int8P outputPtr = Int8P.fromString(output);
+      outputPtrs.add(outputPtr);
+      outputAddress.add(outputPtr.address);
+    }
+  }
+  Int8P inputPtr = Int8P.fromString(input);
+  Int64P outputAddressPtr = Int64P.fromList(outputAddress);
+  DoubleP timesInMsPtr = DoubleP.fromList(timesInMs);
+
+  int convertRet = _audioConvertToThumbnail(inputPtr.address, outputAddressPtr.address, timesInMsPtr.address, timesInMs.length);
+
+  for (var outputPtr in outputPtrs) {
+    outputPtr.dispose();
+  }
+  inputPtr.dispose();
+  outputAddressPtr.dispose();
+  timesInMsPtr.dispose();
+
+  _lastErrRet = convertRet;
+
+  return outputs;
 }

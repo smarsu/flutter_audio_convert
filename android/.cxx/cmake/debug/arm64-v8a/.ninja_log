@@ -1,3 +1,10 @@
 # ninja log v5
-0	29	1606292455	CMakeFiles/audio_convert.dir/audio_convert.cc.o	4a79de8437de662d
-29	3433	1606292458	/Users/smarsu/tencent/projects/video_editor_flutter/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so	36f691b797d50539
+0	24	0	CMakeFiles/audio_convert.dir/audio_convert.cc.o	a6b01982a6828d53
+24	3689	0	/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so	72c8b257a784132f
+0	5027	0	/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so	72c8b257a784132f
+0	1757	0	/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so	72c8b257a784132f
+0	1980	0	/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so	72c8b257a784132f
+0	3904	0	/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so	72c8b257a784132f
+0	3862	0	/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so	72c8b257a784132f
+0	3501	0	/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so	72c8b257a784132f
+0	2811	0	/Users/smarsu/tencent/projects/flutter_audio_convert/example/build/flutter_audio_convert/intermediates/cmake/debug/obj/arm64-v8a/libaudio_convert.so	72c8b257a784132f

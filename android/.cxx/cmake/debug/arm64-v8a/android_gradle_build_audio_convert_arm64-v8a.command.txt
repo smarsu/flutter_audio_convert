@@ -1,7 +1,8 @@
-Executable : /Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja
+Executable : /Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/cmake
 arguments : 
--C
+--build
 /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a
+--target
 audio_convert
 jvmArgs : 
 
