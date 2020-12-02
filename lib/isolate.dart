@@ -1,12 +1,14 @@
+import 'dart:io';
 import 'dart:isolate';
 
 import 'package:flutter_audio_convert/flutter_audio_convert.dart';
 
 class AudioConvert {
   /* Public */
+  static Future<void> initialized = _init();
 
   static Future<String> toM4AAsync(String input, {String output, String extend='mp4'}) async {
-    await _initialized;
+    await initialized;
 
     if (output == null) {
       output = await appDocPath('${DateTime.now().microsecondsSinceEpoch}.$extend');
@@ -18,7 +20,7 @@ class AudioConvert {
   }
 
   static Future<String> toVolumeAsync(String input, {String output, double volume=-10, String extend='mp4'}) async {
-    await _initialized;
+    await initialized;
 
     if (output == null) {
       output = await appDocPath('${DateTime.now().microsecondsSinceEpoch}.$extend');
@@ -30,7 +32,7 @@ class AudioConvert {
   }
 
   static Future<List<String>> toThumbnailAsync(String input, List<double> timesInMs, {List<String> outputs}) async {
-    await _initialized;
+    await initialized;
 
     if (outputs == null) {
       outputs = [];
@@ -46,7 +48,7 @@ class AudioConvert {
   }
 
   static Future<String> toCutAsync(String input, double startMs, double endMs, {String output, String extend='mp4'}) async {
-    await _initialized;
+    await initialized;
 
     if (output == null) {
       output = await appDocPath('${DateTime.now().microsecondsSinceEpoch}.$extend');
@@ -59,13 +61,18 @@ class AudioConvert {
 
   /* Private */
 
-  static Future<void> _initialized = _init();
-
   static SendPort _toM4ASendPort;
   static SendPort _toCutSendPort;
   static SendPort _toVolumeSendPort;
   static SendPort _toThumbnailSendPort;
   static Future<void> _init() async {
+    String dir = await appDocPath('');
+    Directory directory = Directory(dir);
+    if (await directory.exists()) {
+      await directory.delete(recursive: true);
+    }
+    await directory.create(recursive: true);
+
     // 1. Init ToM4A
     {
       final toM4AReceive = ReceivePort();

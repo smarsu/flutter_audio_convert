@@ -45,8 +45,8 @@ int getLastErrRet() {
 }
 
 Future<String> appDocPath(path) async {
-  var dir = (await getTemporaryDirectory()).path;
-  return '$dir/$path';
+  var dir = (await getApplicationDocumentsDirectory()).path;
+  return '$dir/smarsu_flutter_audio_convert/$path';
 }
 
 Future<String> toM4A(String input, {String output, String extend='mp4'}) async {
