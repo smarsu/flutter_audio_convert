@@ -43,7 +43,7 @@ class _MyAppState extends State<MyApp> {
     // Future.delayed(Duration(seconds: 1));
     // await toDuration(path1);
     // Future.delayed(Duration(seconds: 1));
-    await toCut(path1, 1000, 2000);
+    // await toCut(path1, 1000, 2000);
     // Future.delayed(Duration(seconds: 1));
     String path2 = await loadAsset('assets/seeyou.mp4', 'seeyou.mp4');
     await toM4A(path2);
@@ -52,10 +52,10 @@ class _MyAppState extends State<MyApp> {
     // Future.delayed(Duration(seconds: 1));
     // await toDuration(path2);
     // Future.delayed(Duration(seconds: 1));
-    await toCut(path2, 1000, 2000);
+    // await toCut(path2, 1000, 2000);
     // Future.delayed(Duration(seconds: 1));
     String path3 = await loadAsset('assets/16Min.mp4', '16Min.mp4');
-    await toDuration(path3);
+    // await toDuration(path3);
     // Future.delayed(Duration(seconds: 1));
     thumbImages = await toThumbnail(path3, [0, 1000, -10, 60000, 0, 700000, 6000000, 600000]);
     // Future.delayed(Duration(seconds: 1));

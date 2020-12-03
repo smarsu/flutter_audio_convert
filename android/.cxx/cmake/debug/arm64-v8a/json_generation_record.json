@@ -25,6 +25,14 @@
   },
   {
     "level": "INFO",
+    "message": "- expected json /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build.json file is not present, will remove stale json folder"
+  },
+  {
+    "level": "INFO",
+    "message": "- missing previous command file /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/build_command.txt, will remove stale json folder"
+  },
+  {
+    "level": "INFO",
     "message": "- command changed from previous, will remove stale json folder"
   },
   {

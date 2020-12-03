@@ -31,7 +31,7 @@ class AudioConvert {
     return await receivePort.first;
   }
 
-  static Future<List<String>> toThumbnailAsync(String input, List<double> timesInMs, {List<String> outputs}) async {
+  static Future<List<String>> toThumbnailAsync(String input, List<double> timesInMs, {List<String> outputs, int width=0, int height=0, double threshold=double.infinity}) async {
     await initialized;
 
     if (outputs == null) {
@@ -43,7 +43,7 @@ class AudioConvert {
     }
 
     ReceivePort receivePort = ReceivePort();
-    _toThumbnailSendPort.send([receivePort.sendPort, input, timesInMs, outputs]);
+    _toThumbnailSendPort.send([receivePort.sendPort, input, timesInMs, outputs, width, height, threshold]);
     return await receivePort.first;
   }
 
@@ -163,8 +163,11 @@ class AudioConvert {
       String input = msg[1];
       List<double> timesInMs = msg[2];
       List<String> outputs = msg[3];
+      int width = msg[4];
+      int height = msg[5];
+      double threshold = msg[6];
 
-      List<String> result = await toThumbnail(input, timesInMs, outputs: outputs);
+      List<String> result = await toThumbnail(input, timesInMs, outputs: outputs, width: width, height: height, threshold: threshold);
       callbackPort.send(result);
     }
   }

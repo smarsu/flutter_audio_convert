@@ -3,17 +3,17 @@ The host system is: Darwin - 19.6.0 - x86_64
 Determining if the C compiler works passed with the following output:
 Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_3ac1b"
-[1/2] Building C object CMakeFiles/cmTC_3ac1b.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_3ac1b
+Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_2f19e"
+[1/2] Building C object CMakeFiles/cmTC_2f19e.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_2f19e
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_6e7f9"
-[1/2] Building C object CMakeFiles/cmTC_6e7f9.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_6e7f9
+Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_a7a72"
+[1/2] Building C object CMakeFiles/cmTC_a7a72.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_a7a72
 Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
 Target: aarch64-none-linux-android24
 Thread model: posix
@@ -22,16 +22,16 @@ Found candidate GCC installation: /Users/smarsu/tencent/projects/android-sdk-mac
 Selected GCC installation: /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_6e7f9 /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_6e7f9.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
+ "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_a7a72 /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_a7a72.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(aarch64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_6e7f9"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_6e7f9.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_6e7f9]
+  ignore line: [Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_a7a72"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_a7a72.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_a7a72]
   ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
   ignore line: [Target: aarch64-none-linux-android24]
   ignore line: [Thread model: posix]
@@ -42,7 +42,7 @@ Parsed C implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_6e7f9 /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_6e7f9.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+  link line: [ "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_a7a72 /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_a7a72.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
     arg [/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
@@ -58,7 +58,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_6e7f9] ==> ignore
+    arg [cmTC_a7a72] ==> ignore
     arg [/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o] ==> ignore
     arg [-L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64] ==> dir [/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64]
     arg [-L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
@@ -77,7 +77,7 @@ Parsed C implicit link information from above output:
     arg [--no-undefined] ==> ignore
     arg [-znoexecstack] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_6e7f9.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_a7a72.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
@@ -103,9 +103,9 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_862cc"
-[1/2] Building C object CMakeFiles/cmTC_862cc.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_862cc
+Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_4a9a3"
+[1/2] Building C object CMakeFiles/cmTC_4a9a3.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_4a9a3
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -117,9 +117,9 @@ Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_a1624"
-[1/2] Building C object CMakeFiles/cmTC_a1624.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_a1624
+Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_e83a4"
+[1/2] Building C object CMakeFiles/cmTC_e83a4.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_e83a4
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -131,9 +131,9 @@ Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_e2bf7"
-[1/2] Building C object CMakeFiles/cmTC_e2bf7.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_e2bf7
+Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_864a8"
+[1/2] Building C object CMakeFiles/cmTC_864a8.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_864a8
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -143,19 +143,19 @@ Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_69474"
-[1/2] Building CXX object CMakeFiles/cmTC_69474.dir/testCXXCompiler.cxx.o
+Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_cca55"
+[1/2] Building CXX object CMakeFiles/cmTC_cca55.dir/testCXXCompiler.cxx.o
 clang++: warning: -llog: 'linker' input unused [-Wunused-command-line-argument]
-[2/2] Linking CXX executable cmTC_69474
+[2/2] Linking CXX executable cmTC_cca55
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_785f3"
-[1/2] Building CXX object CMakeFiles/cmTC_785f3.dir/CMakeCXXCompilerABI.cpp.o
+Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_eaa83"
+[1/2] Building CXX object CMakeFiles/cmTC_eaa83.dir/CMakeCXXCompilerABI.cpp.o
 clang++: warning: -llog: 'linker' input unused [-Wunused-command-line-argument]
-[2/2] Linking CXX executable cmTC_785f3
+[2/2] Linking CXX executable cmTC_eaa83
 Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
 Target: aarch64-none-linux-android24
 Thread model: posix
@@ -164,17 +164,17 @@ Found candidate GCC installation: /Users/smarsu/tencent/projects/android-sdk-mac
 Selected GCC installation: /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_785f3 /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib -llog --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_785f3.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
+ "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_eaa83 /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib -llog --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_eaa83.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(aarch64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_785f3"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_785f3.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_eaa83"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_eaa83.dir/CMakeCXXCompilerABI.cpp.o]
   ignore line: [clang++: warning: -llog: 'linker' input unused [-Wunused-command-line-argument]]
-  ignore line: [[2/2] Linking CXX executable cmTC_785f3]
+  ignore line: [[2/2] Linking CXX executable cmTC_eaa83]
   ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
   ignore line: [Target: aarch64-none-linux-android24]
   ignore line: [Thread model: posix]
@@ -185,7 +185,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_785f3 /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib -llog --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_785f3.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+  link line: [ "/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_eaa83 /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib -llog --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_eaa83.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl /Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
     arg [/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
@@ -201,7 +201,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_785f3] ==> ignore
+    arg [cmTC_eaa83] ==> ignore
     arg [/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o] ==> ignore
     arg [-L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64] ==> dir [/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/lib/linux/aarch64]
     arg [-L/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/Users/smarsu/tencent/projects/android-sdk-macosx/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
@@ -221,7 +221,7 @@ Parsed CXX implicit link information from above output:
     arg [--no-undefined] ==> ignore
     arg [-znoexecstack] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_785f3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_eaa83.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-Bstatic] ==> ignore
     arg [-lc++] ==> lib [c++]
     arg [-Bdynamic] ==> ignore
@@ -251,10 +251,10 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_f9ea2"
-[1/2] Building CXX object CMakeFiles/cmTC_f9ea2.dir/feature_tests.cxx.o
+Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_31b98"
+[1/2] Building CXX object CMakeFiles/cmTC_31b98.dir/feature_tests.cxx.o
 clang++: warning: -llog: 'linker' input unused [-Wunused-command-line-argument]
-[2/2] Linking CXX executable cmTC_f9ea2
+[2/2] Linking CXX executable cmTC_31b98
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -319,10 +319,10 @@ clang++: warning: -llog: 'linker' input unused [-Wunused-command-line-argument]
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_b1515"
-[1/2] Building CXX object CMakeFiles/cmTC_b1515.dir/feature_tests.cxx.o
+Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_9224c"
+[1/2] Building CXX object CMakeFiles/cmTC_9224c.dir/feature_tests.cxx.o
 clang++: warning: -llog: 'linker' input unused [-Wunused-command-line-argument]
-[2/2] Linking CXX executable cmTC_b1515
+[2/2] Linking CXX executable cmTC_9224c
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -387,10 +387,10 @@ clang++: warning: -llog: 'linker' input unused [-Wunused-command-line-argument]
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /Users/smarsu/tencent/projects/flutter_audio_convert/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_8b331"
-[1/2] Building CXX object CMakeFiles/cmTC_8b331.dir/feature_tests.cxx.o
+Run Build Command:"/Users/smarsu/tencent/projects/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_71d43"
+[1/2] Building CXX object CMakeFiles/cmTC_71d43.dir/feature_tests.cxx.o
 clang++: warning: -llog: 'linker' input unused [-Wunused-command-line-argument]
-[2/2] Linking CXX executable cmTC_8b331
+[2/2] Linking CXX executable cmTC_71d43
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

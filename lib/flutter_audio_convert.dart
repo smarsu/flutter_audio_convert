@@ -26,9 +26,9 @@ final int Function(int) _audioConvertToDuration =
         .lookup<NativeFunction<Int64 Function(Int64)>>("to_duration")
         .asFunction();
 
-final int Function(int, int, int, int) _audioConvertToThumbnail = 
+final int Function(int, int, int, int, int, int, double) _audioConvertToThumbnail = 
     _audioConvertLib
-        .lookup<NativeFunction<Int32 Function(Int64, Int64, Int64, Int32)>>("to_thumbnail")
+        .lookup<NativeFunction<Int32 Function(Int64, Int64, Int64, Int32, Int32, Int32, Double)>>("to_thumbnail")
         .asFunction();
 
 final int Function(int, int, double, double) _audioConvertToCut =
@@ -136,8 +136,8 @@ Future<int> toDuration(String input) async {
   }
 }
 
-Future<List<String>> toThumbnail(String input, List<double> timesInMs, {List<String> outputs}) async {
-  String key = 'toThumbnail_${input}_${timesInMs}';
+Future<List<String>> toThumbnail(String input, List<double> timesInMs, {List<String> outputs, int width=0, int height=0, double threshold=double.infinity}) async {
+  String key = 'toThumbnail_${input}_${timesInMs}_${width}_${height}_${threshold}';
   if (cache.containsKey(key)) {
     return cache[key];
   }
@@ -172,7 +172,7 @@ Future<List<String>> toThumbnail(String input, List<double> timesInMs, {List<Str
   Int64P outputAddressPtr = Int64P.fromList(outputAddress);
   DoubleP timesInMsPtr = DoubleP.fromList(timesInMs);
 
-  int convertRet = _audioConvertToThumbnail(inputPtr.address, outputAddressPtr.address, timesInMsPtr.address, timesInMs.length);
+  int convertRet = _audioConvertToThumbnail(inputPtr.address, outputAddressPtr.address, timesInMsPtr.address, timesInMs.length, width, height, threshold);
 
   for (var outputPtr in outputPtrs) {
     outputPtr.dispose();
