@@ -51,9 +51,9 @@ Future<String> appDocPath(path) async {
 
 Future<String> toM4A(String input, {String output, String extend='mp4'}) async {
   String key = 'toM4A_${input}_${extend}';
-  if (cache.containsKey(key)) {
-    return cache[key];
-  }
+  // if (cache.containsKey(key)) {
+  //   return cache[key];
+  // }
 
   if (output == null) {
     output = await appDocPath('${DateTime.now().microsecondsSinceEpoch}.$extend');
@@ -86,9 +86,9 @@ Future<String> toM4A(String input, {String output, String extend='mp4'}) async {
 
 Future<String> toVolume(String input, {String output, double volume=-10, String extend='mp4'}) async {
   String key = 'toVolume_${input}_${volume}_${extend}';
-  if (cache.containsKey(key)) {
-    return cache[key];
-  }
+  // if (cache.containsKey(key)) {
+  //   return cache[key];
+  // }
 
   if (output == null) {
     output = await appDocPath('${DateTime.now().microsecondsSinceEpoch}.$extend');
@@ -116,9 +116,9 @@ Future<String> toVolume(String input, {String output, double volume=-10, String 
 
 Future<int> toDuration(String input) async {
   String key = 'toDuration_${input}';
-  if (cache.containsKey(key)) {
-    return cache[key];
-  }
+  // if (cache.containsKey(key)) {
+  //   return cache[key];
+  // }
 
   Int8P inputPtr = Int8P.fromString(input);
   int duration = _audioConvertToDuration(inputPtr.address);
@@ -138,9 +138,9 @@ Future<int> toDuration(String input) async {
 
 Future<List<String>> toThumbnail(String input, List<double> timesInMs, {List<String> outputs, int width=0, int height=0, double threshold=double.infinity}) async {
   String key = 'toThumbnail_${input}_${timesInMs}_${width}_${height}_${threshold}';
-  if (cache.containsKey(key)) {
-    return cache[key];
-  }
+  // if (cache.containsKey(key)) {
+  //   return cache[key];
+  // }
 
   List<Int8P> outputPtrs = [];
   List<int> outputAddress = [];
@@ -189,9 +189,9 @@ Future<List<String>> toThumbnail(String input, List<double> timesInMs, {List<Str
 
 Future<String> toCut(String input, double startMs, double endMs, {String output, String extend='mp4'}) async {
   String key = 'toCut_${input}_${extend}';
-  if (cache.containsKey(key)) {
-    return cache[key];
-  }
+  // if (cache.containsKey(key)) {
+  //   return cache[key];
+  // }
 
   if (output == null) {
     output = await appDocPath('${DateTime.now().microsecondsSinceEpoch}.$extend');
