@@ -15,7 +15,8 @@ class AudioConvert {
     }
 
     ReceivePort receivePort = ReceivePort();
-    _toM4ASendPort.send([receivePort.sendPort, input, output, extend]);
+    // _toM4ASendPort.send([receivePort.sendPort, input, output, extend]);
+    _audioConvertSendPort.send([receivePort.sendPort, 'toM4a', input, output, extend]);
     return await receivePort.first;
   }
 
@@ -27,10 +28,12 @@ class AudioConvert {
     }
 
     ReceivePort receivePort = ReceivePort();
-    _toVolumeSendPort.send([receivePort.sendPort, input, output, volume, extend]);
+    // _toVolumeSendPort.send([receivePort.sendPort, input, output, volume, extend]);
+    _audioConvertSendPort.send([receivePort.sendPort, 'toVolume', input, output, volume, extend]);
     return await receivePort.first;
   }
 
+  // threshold [0 - double.infinity]: 越低 图片定位越准
   static Future<List<String>> toThumbnailAsync(String input, List<double> timesInMs, {List<String> outputs, int width=0, int height=0, double threshold=double.infinity}) async {
     await initialized;
 
@@ -43,7 +46,8 @@ class AudioConvert {
     }
 
     ReceivePort receivePort = ReceivePort();
-    _toThumbnailSendPort.send([receivePort.sendPort, input, timesInMs, outputs, width, height, threshold]);
+    // _toThumbnailSendPort.send([receivePort.sendPort, input, timesInMs, outputs, width, height, threshold]);
+    _audioConvertSendPort.send([receivePort.sendPort, 'toThumbnail', input, timesInMs, outputs, width, height, threshold]);
     return await receivePort.first;
   }
 
@@ -55,16 +59,18 @@ class AudioConvert {
     }
 
     ReceivePort receivePort = ReceivePort();
-    _toCutSendPort.send([receivePort.sendPort, input, startMs, endMs, output, extend]);
+    // _toCutSendPort.send([receivePort.sendPort, input, startMs, endMs, output, extend]);
+    _audioConvertSendPort.send([receivePort.sendPort, 'toCut', input, startMs, endMs, output, extend]);
     return await receivePort.first;
   }
 
   /* Private */
 
-  static SendPort _toM4ASendPort;
-  static SendPort _toCutSendPort;
-  static SendPort _toVolumeSendPort;
-  static SendPort _toThumbnailSendPort;
+  static SendPort _audioConvertSendPort;
+  // static SendPort _toM4ASendPort;
+  // static SendPort _toCutSendPort;
+  // static SendPort _toVolumeSendPort;
+  // static SendPort _toThumbnailSendPort;
   static Future<void> _init() async {
     String dir = await appDocPath('');
     Directory directory = Directory(dir);
@@ -73,35 +79,66 @@ class AudioConvert {
     }
     await directory.create(recursive: true);
 
-    // 1. Init ToM4A
-    {
-      final toM4AReceive = ReceivePort();
-      await Isolate.spawn(_toM4AEntryFunction, toM4AReceive.sendPort);
-      _toM4ASendPort = await toM4AReceive.first;
-    }
+    final receivePort = ReceivePort();
+    await Isolate.spawn(_audioConvertEntryFunction, receivePort.sendPort);
+    _audioConvertSendPort = await receivePort.first;
 
-    // 2. Init ToCut
-    {
-      final toCutReceive = ReceivePort();
-      await Isolate.spawn(_toCutEntryFunction, toCutReceive.sendPort);
-      _toCutSendPort = await toCutReceive.first;
-    }
+    // // 1. Init ToM4A
+    // {
+    //   final toM4AReceive = ReceivePort();
+    //   await Isolate.spawn(_toM4AEntryFunction, toM4AReceive.sendPort);
+    //   _toM4ASendPort = await toM4AReceive.first;
+    // }
 
-    // 3. Init ToVolume
-    {
-      final toVolumeReceive = ReceivePort();
-      await Isolate.spawn(_toThumbnailEntryFunction, toVolumeReceive.sendPort);
-      _toThumbnailSendPort = await toVolumeReceive.first;
-    }
+    // // 2. Init ToCut
+    // {
+    //   final toCutReceive = ReceivePort();
+    //   await Isolate.spawn(_toCutEntryFunction, toCutReceive.sendPort);
+    //   _toCutSendPort = await toCutReceive.first;
+    // }
 
-    // 4. Init Thumbnail
-    {
-      final toThumbnailReceive = ReceivePort();
-      await Isolate.spawn(_toVolumeEntryFunction, toThumbnailReceive.sendPort);
-      _toVolumeSendPort = await toThumbnailReceive.first;
-    }
+    // // 3. Init ToVolume
+    // {
+    //   final toVolumeReceive = ReceivePort();
+    //   await Isolate.spawn(_toThumbnailEntryFunction, toVolumeReceive.sendPort);
+    //   _toThumbnailSendPort = await toVolumeReceive.first;
+    // }
+
+    // // 4. Init Thumbnail
+    // {
+    //   final toThumbnailReceive = ReceivePort();
+    //   await Isolate.spawn(_toVolumeEntryFunction, toThumbnailReceive.sendPort);
+    //   _toVolumeSendPort = await toThumbnailReceive.first;
+    // }
 
     print('AudioConvert Init Success!');
+  }
+
+  static void _audioConvertEntryFunction(SendPort sendPort) async {
+    ReceivePort receivePort = ReceivePort();
+    sendPort.send(receivePort.sendPort);
+
+    await for (var msg in receivePort) {
+      SendPort callbackPort = msg[0];
+      String mod = msg[1];
+
+      if (mod == 'toM4a') {
+        String result = await toM4A(msg[2], output: msg[3], extend: msg[4]);
+        callbackPort.send(result);
+      }
+      else if (mod == 'toVolume') {
+        String result = await toVolume(msg[2], output: msg[3], volume: msg[4], extend: msg[5]);
+        callbackPort.send(result);
+      }
+      else if (mod == 'toCut') {
+        String result = await toCut(msg[2], msg[3], msg[4], output: msg[5], extend: msg[6]);
+        callbackPort.send(result);
+      }
+      else if (mod == 'toThumbnail') {
+        List<String> result = await toThumbnail(msg[2], msg[3], outputs: msg[4], width: msg[5], height: msg[6], threshold: msg[7]);
+        callbackPort.send(result);
+      }
+    }
   }
 
   static void _toM4AEntryFunction(SendPort sendPort) async {
