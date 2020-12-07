@@ -37,28 +37,30 @@ class _MyAppState extends State<MyApp> {
     await AudioConvert.initialized;
 
     String path1 = await loadAsset('assets/cat.mp4', 'cat.mp4');
-    await toM4A(path1);
+    await AudioConvert.toM4AAsync(path1);
     // Future.delayed(Duration(seconds: 1));
-    await toVolume(path1);
+    await AudioConvert.toVolumeAsync(path1);
     // Future.delayed(Duration(seconds: 1));
     await toDuration(path1);
     // Future.delayed(Duration(seconds: 1));
-    await toCut(path1, 1000, 2000);
+    await AudioConvert.toCutAsync(path1, 1000, 2000);
     // Future.delayed(Duration(seconds: 1));
     String path2 = await loadAsset('assets/seeyou.mp4', 'seeyou.mp4');
-    await toM4A(path2);
+    await AudioConvert.toM4AAsync(path2);
     // Future.delayed(Duration(seconds: 1));
-    await toVolume(path2);
+    await AudioConvert.toVolumeAsync(path2);
     // Future.delayed(Duration(seconds: 1));
     await toDuration(path2);
     // Future.delayed(Duration(seconds: 1));
-    await toCut(path2, 1000, 2000);
+    await AudioConvert.toCutAsync(path2, 1000, 2000);
     // Future.delayed(Duration(seconds: 1));
-    String path3 = await loadAsset('assets/16Min.mp4', '16Min.mp4');
+    String path3 = await loadAsset('assets/1Min.mp4', '1Min.mp4');
     // await toDuration(path3);
     // Future.delayed(Duration(seconds: 1));
-    thumbImages = await toThumbnail(path3, [0, 1000, -10, 60000, 0, 700000, 6000000, 600000]);
+    // thumbImages = await AudioConvert.toThumbnailAsync(path3, [0, 1000, -10, 60000, 0, 700000, 6000000, 600000]);
+    thumbImages = await AudioConvert.toThumbnailAsync(path3, [0, 300, 600, 900, 1200, 1500, 1800, 2100]);
     // Future.delayed(Duration(seconds: 1));
+
     setState(() {});
   }
 

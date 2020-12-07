@@ -17,5 +17,6 @@ target_link_libraries(
   libavutil.a
   libswresample.a
   libswscale.a
+  libffmpeg_command.a
   -Wl,--no-whole-archive
 )

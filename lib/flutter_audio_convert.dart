@@ -173,6 +173,7 @@ Future<List<String>> toThumbnail(String input, List<double> timesInMs, {List<Str
   DoubleP timesInMsPtr = DoubleP.fromList(timesInMs);
 
   int convertRet = _audioConvertToThumbnail(inputPtr.address, outputAddressPtr.address, timesInMsPtr.address, timesInMs.length, width, height, threshold);
+  print('In toThumbnail, convertRet ... $convertRet');
 
   for (var outputPtr in outputPtrs) {
     outputPtr.dispose();
