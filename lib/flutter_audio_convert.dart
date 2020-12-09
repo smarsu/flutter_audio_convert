@@ -36,6 +36,11 @@ final int Function(int, int, double, double) _audioConvertToCut =
         .lookup<NativeFunction<Int32 Function(Int64, Int64, Double, Double)>>("to_m4a_cut")
         .asFunction();
 
+final double Function(int, int, int, int) _audioConvertSentenceSimilarity = 
+    _audioConvertLib
+        .lookup<NativeFunction<Float Function(Int64, Int32, Int64, Int32)>>("sentence_bleu")
+        .asFunction();
+
 int _lastErrRet = 0;
 
 Map<String, dynamic> cache = {};
@@ -221,4 +226,42 @@ Future<String> toCut(String input, double startMs, double endMs, {String output,
   }
   cache[key] = output;
   return output;
+}
+
+double sentenceSimilarity(String sentence1, String sentence2) {
+  Map<String, int> idMap = {};
+  int id = 0;
+  for (int idx = 0; idx < sentence1.length; ++idx) {
+    String char = sentence1[idx];
+    if (!idMap.containsKey(char)) {
+      // Not Found
+      idMap[char] = ++id;
+    }
+  }
+
+  for (int idx = 0; idx < sentence2.length; ++idx) {
+    String char = sentence2[idx];
+    if (!idMap.containsKey(char)) {
+      // Not Found
+      idMap[char] = ++id;
+    }
+  }
+
+  List<int> ids1 = [];
+  for (int idx = 0; idx < sentence1.length; ++idx) {
+    ids1.add(idMap[sentence1[idx]]);
+  }
+
+  List<int> ids2 = [];
+  for (int idx = 0; idx < sentence2.length; ++idx) {
+    ids2.add(idMap[sentence2[idx]]);
+  }
+
+  Int16P p1 = Int16P.fromList(ids1);
+  Int16P p2 = Int16P.fromList(ids2);
+  double score = _audioConvertSentenceSimilarity(p1.address, p1.length, p2.address, p2.length);
+  p1.dispose();
+  p2.dispose();
+
+  return score;
 }
