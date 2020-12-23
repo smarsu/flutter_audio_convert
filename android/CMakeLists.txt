@@ -3,6 +3,8 @@
 cmake_minimum_required(VERSION 3.6.0)
 project(audio_convert)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3")
+
 link_directories(.)
 link_directories(arm64)
 

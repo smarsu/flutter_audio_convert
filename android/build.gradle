@@ -25,13 +25,13 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 28
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
-        minSdkVersion 24
+        minSdkVersion 21
     }
     lintOptions {
         disable 'InvalidPackage'
@@ -52,7 +52,7 @@ android {
             // Encapsulates your CMake build configurations.
             cmake {
                 // Provides a relative path to your CMake build script.
-                cppFlags "-llog -fopenmp"
+                cppFlags "-llog"
             }
         }
         ndk {
